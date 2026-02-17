@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products - SwiftCart</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg-white">
+  <header class="bg-base-100 shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto navbar px-4 md:px-8">
+      <div class="navbar-start">
+        <a href="index.html" class="text-2xl font-black text-indigo-600 tracking-tight">SwiftCart</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal gap-2 px-1 font-semibold">
+          <li><a href="index.html" class="text-slate-600 hover:text-indigo-600 transition">Home</a></li>
+          <li><a href="products.html" class="text-indigo-600 border-b-2 border-indigo-600 rounded-none">Product</a></li>
+          <li><a class="text-slate-600 hover:text-indigo-600 transition">About</a></li>
+          <li><a class="text-slate-600 hover:text-indigo-600 transition">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <button class="btn btn-ghost btn-circle">
+          <i class="fa-solid fa-cart-shopping text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-16">
+    <h2 class="text-4xl font-bold text-center mb-12">Our All Products</h2>
+    <div id="all-products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <p>Loading All Products...</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1e293b] text-slate-400 py-12 px-6">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 border-b border-slate-700 pb-10">
+        <div>
+          <h2 class="text-2xl font-bold text-indigo-400 mb-5">SwiftCart</h2>
+          <p class="text-sm leading-relaxed">Your one-stop shop for all your fashion and lifestyle needs. Quality
+            products, fast delivery, and excellent support.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-5 uppercase text-xs tracking-widest">Quick Links</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white transition">Home</a></li>
+            <li><a href="#" class="hover:text-white transition">Products</a></li>
+            <li><a href="#" class="hover:text-white transition">About</a></li>
+            <li><a href="#" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-5 uppercase text-xs tracking-widest">Support</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+            <li><a href="#" class="hover:text-white transition">Shipping</a></li>
+            <li><a href="#" class="hover:text-white transition">Returns</a></li>
+            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-5 uppercase text-xs tracking-widest">Subscribe</h3>
+          <p class="text-sm mb-4">The latest news, articles, and resources sent to your inbox.</p>
+          <div class="flex gap-2">
+            <input type="email" placeholder="Enter your email"
+              class="bg-white text-black px-3 py-2 rounded-md w-full outline-none">
+            <button
+              class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+        <p class="text-sm">© 2025 SwiftCart, Inc. All rights reserved.</p>
+
+        <div class="flex gap-6 text-xl">
+          <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="hover:text-white transition"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="hover:text-white transition"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/index.js"></script>
+</body>
+
+</html>
