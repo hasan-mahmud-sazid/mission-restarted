@@ -32,12 +32,28 @@
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-16">
-    <h2 class="text-4xl font-bold text-center mb-12">Our All Products</h2>
+  <div class="container mx-auto px-4 py-16">
+    <h2 class="text-4xl font-bold text-center mb-8">Our All Products</h2>
+
+    <div id="category-container" class="flex flex-wrap justify-center gap-3 mb-12">
+      <button onclick="filterByCategory('all')"
+        class="btn btn-sm rounded-full bg-indigo-600 text-white border-none px-6">All</button>
+      <button onclick="filterByCategory('electronics')"
+        class="btn btn-sm rounded-full bg-gray-100 text-gray-600 border-none px-6 hover:bg-indigo-100">Electronics</button>
+      <button onclick="filterByCategory('jewelery')"
+        class="btn btn-sm rounded-full bg-gray-100 text-gray-600 border-none px-6 hover:bg-indigo-100">Jewelry</button>
+      <button onclick="filterByCategory(`men's clothing`)"
+        class="btn btn-sm rounded-full bg-gray-100 text-gray-600 border-none px-6 hover:bg-indigo-100">Men's
+        Clothing</button>
+      <button onclick="filterByCategory(`women's clothing`)"
+        class="btn btn-sm rounded-full bg-gray-100 text-gray-600 border-none px-6 hover:bg-indigo-100">Women's
+        Clothing</button>
+    </div>
+
     <div id="all-products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <p>Loading All Products...</p>
     </div>
-  </main>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-[#1e293b] text-slate-400 py-12 px-6">
